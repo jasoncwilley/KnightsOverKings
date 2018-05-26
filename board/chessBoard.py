@@ -8,20 +8,15 @@ from pieces import queen
 from pieces import rook
 
 
-
-
-
-
 class Board:
-
-
     gameTiles = {}
+    enPassPawn = None
+    enPassPawnBehind = None
+    currentPlayer = "White"
 
     def __init__(self):
 
         pass
-
-
 
     def createBoard(self):
 
@@ -74,3 +69,4 @@ class Board:
             if count == 8:
                 print('|', end='\n')
                 count = 0
+
