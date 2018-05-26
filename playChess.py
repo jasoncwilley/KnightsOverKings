@@ -1,6 +1,6 @@
 import pygame
+import board.chessBoard
 
-from board.chessBoard import Board
 #from board.move import Move
 #from player.minimax import Minimax
 
@@ -10,9 +10,7 @@ pygame.display.set_caption("PyChess")
 clock = pygame.time.Clock()
 
 
-
-
-chessBoard = Board()
+chessBoard = board.chessBoard.Board()
 chessBoard.createBoard()
 chessBoard.printBoard()
 
@@ -34,4 +32,4 @@ while not quitGame:
 
 
     pygame.display.update()
-    clock.tice(60)
+    clock.tick(60)
