@@ -16,7 +16,7 @@ class Knight(Piece):
     def toString(self):
         return "N" if self.alliance == "Black" else "n"
 
-'''    def calculateLegalMoves(self, board):
+    def calculateLegalMoves(self, board):
 
         legalMoves = []
         for vector in self.possibleMoveVectors:
@@ -55,7 +55,7 @@ class Knight(Piece):
                 return True
 
         return False
-'''
+
 
 
 

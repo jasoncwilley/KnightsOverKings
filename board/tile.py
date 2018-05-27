@@ -1,4 +1,3 @@
-
 class Tile:
 
     pieceOnTile = None
@@ -7,6 +6,3 @@ class Tile:
     def __init__(self, coordinate, piece):
         self.tileCoordinate = coordinate
         self.pieceOnTile = piece
-
-
-
