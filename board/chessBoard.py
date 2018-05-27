@@ -18,6 +18,19 @@ class Board:
 
         pass
 
+
+
+    def calculateActivePieces(self, alliance):
+
+        activeP = []
+        for tile in range(len(self.gameTiles)):
+            if not self.gameTiles[tile].pieceOnTile.toString() == "-":
+                if self.gameTiles[tile].pieceOnTile.alliance == alliance:
+                    activeP.append(self.gameTiles[tile].pieceOnTile)
+
+        return activeP
+
+
     def createBoard(self):
 
         for x in range(64):
